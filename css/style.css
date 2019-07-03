@@ -1,83 +1,138 @@
 
 /* Typography */
   @font-face {
-    font-family: 'Beatrice';
-    src: url('fonts/beatrice.eot'); /* IE9 Compat Modes */
-    src: url('fonts/beatrice.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-          url('fonts/beatrice.woff2') format('woff2'), /* Super Modern Browsers */
-          url('fonts/beatrice.woff') format('woff'), /* Pretty Modern Browsers */
-          url('fonts/beatrice.ttf')  format('truetype'), /* Safari, Android, iOS */
-          url('fonts/beatrice.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'NBInternationalLi';
+    src: url('../fonts/NBInternational/NB-International-Pro-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/NBInternational/NB-International-Pro-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/NBInternational/NB-International-Pro-Light.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/NBInternational/NB-International-Pro-Light.woff') format('woff'), /* Pretty Modern Browsers */
+          url('../fonts/NBInternational/NB-International-Pro-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/NBInternational/NB-International-Pro-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
   }
   @font-face {
-    font-family: 'BeatriceBold';
-    src: url('fonts/beatrice.eot'); /* IE9 Compat Modes */
-    src: url('fonts/beatrice.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-          url('fonts/beatrice.woff2') format('woff2'), /* Super Modern Browsers */
-          url('fonts/beatrice.woff') format('woff'), /* Pretty Modern Browsers */
-          url('fonts/beatrice.ttf')  format('truetype'), /* Safari, Android, iOS */
-          url('fonts/beatrice.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'NBInternationalRe';
+    src: url('../fonts/NBInternational/NB-International-Pro-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/NBInternational/NB-International-Pro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/NBInternational/NB-International-Pro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/NBInternational/NB-International-Pro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+          url('../fonts/NBInternational/NB-International-Pro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/NBInternational/NB-International-Pro-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
   }
+
+  @font-face {
+    font-family: 'NBInternationalBo';
+    src: url('../fonts/NBInternational/NB-International-Pro-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/NBInternational/NB-International-Pro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/NBInternational/NB-International-Pro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/NBInternational/NB-International-Pro-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+          url('../fonts/NBInternational/NB-International-Pro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/NBInternational/NB-International-Pro-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'NBInternationalMono';
+    src: url('../fonts/NBInternational/NB-International-Pro-Mono.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/NBInternational/NB-International-Pro-Mono.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/NBInternational/NB-International-Pro-Mono.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/NBInternational/NB-International-Pro-Mono.woff') format('woff'), /* Pretty Modern Browsers */
+          url('../fonts/NBInternational/NB-International-Pro-Mono.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/NBInternational/NB-International-Pro-Mono.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+
   body{
-    font-family: 'Beatrice',Helvetica, sans-serif;
-    color: #1E241C;
+    font-family: 'NBInternationalLi',Helvetica, sans-serif;
+    color: #111111;
     font-size: 16px;
     line-height:  32px;
+    font-weight: 100;
   }
 
   h1{
-    font-size: 3.2em;
-    line-height: 1.6;
-    font-weight: 400;
-    margin-block-start: none;
+    font-family: 'NBInternationalLi',Helvetica, sans-serif;
+    font-size: 4em;
+    line-height: 1.3;
+    margin:0;
+    padding:0;
+    font-weight: normal;
+    letter-spacing: -0.0625rem;
   }
 
   h2 {
-    font-size: 3.2em;
-    font-weight: 200;
+    font-size: 4em;
+    font-weight: normal;
+    color: white;
+    letter-spacing: -0.0625rem;
   }
 
   h3 {
+    font-family: 'NBInternationalLi',Helvetica, sans-serif;
     font-size: 3.2em;
-    font-weight: 200;
+    font-weight: normal;
+    letter-spacing: -0.0625rem;
+
+
   }
 
   a {
     text-decoration: none;
-    font-weight: bold;
-    color: #1E241C;
+    color: #111111;
+    font-weight: normal;
   }
+
+  .mono {
+    font-family: 'NBInternationalMono',Courier, monospace;
+  }
+
+  .bold {
+    font-family: 'NBInternationalBo',Courier, monospace;
+  }
+
+  del{
+    color:#ffffff;
+  }
+
+  .medium{
+    font-family: 'NBInternationalRe',Courier, monospace;
+    font-size: 2.4em;
+  }
+  .regular {
+    font-size: 2.4em;
+  }
+
 /* Colour */
 
 
-/* Body */
+/* Overall */
   html, body {
     height: 100%;
+    font-size: 16px;
 
   }
   body {
     border-width: 0px;
     margin: 0px;
+    background:  rgb(201,201,201);
   }
 
 /* Header */
   header{
     flex-wrap: wrap;
-    min-height: 100vh;
-    padding: 0 40px;
+    padding: 0 40px;;
   }
 
 
   nav {
-    font-size: 3.2em;
-    line-height: 1.6;
-    font-weight: 400;
-    font-weight: normal;
+    font-size: 4em;
+    line-height: 1.3;
+    padding-top: 1em;
+    letter-spacing: -0.0625rem;
   }
 
   nav a{
-    font-weight: normal;
-    color: #E3E4E3;
+    color: #ffffff;
+    font-family: 'NBInternationalLi',Helvetica, sans-serif;
+
   }
 
   ul {
@@ -99,50 +154,176 @@
   }
 
   li a:hover:not(.active) {
-    color: #1E241C;
+    color: #111111;
 }
 
 .active {
-    color: #1E241C;
+    color: #111111;
 }
+
 
 /* Content */
   article{
-    padding: 0 40px;
+    padding: 0 40px;;
   }
 
   .content {
   }
 
   .header-grid {
-
-
   }
 
-  .content-grid {
+  .index{
+    height: 100vh;
+  }
+  .about{
+    height: 20vh;
+  }
+
+  .projects{
+    position: relative;
+    padding-bottom: 40vh;
+  }
+
+  .projects-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 24px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1.5em;
+
   }
 
+  .introduction{
+    position: relative;
+    width: 66vw;
+  }
+
+  .table {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  .table-head{
+    border-bottom: 1px solid #111111;
+    margin-right: auto;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #111111;
+  }
+
+  .name {
+    font-size: 2em;
+    line-height: 2.8em;
+    display: flex;
+  }
+  .right {
+    align-items: center;
+    text-align: right;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .description {
+    align-items: flex-end;
+    display: flex;
+    text-align: right;
+    padding-right: 2em;
+    font-size: 0.8em;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: 'NBInternationalMono', Courier, monospace;
+    color: white;
+  }
+
+  .right {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 4em;
+  }
+
+  .appendix {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0.5em;
+      width: 6em;
+      margin-top: -0.4em;
+      padding-left:0.2em;
+  }
+
+  .experience{
+
+  }
+
+  .experience-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1.5em;
+  }
+
+  .blurbutton {
+    background: rgb(234,225,250);
+    background: radial-gradient(circle, rgba(234,225,250,1) 0%, rgba(234,225,250,0) 100%);
+
+    padding: 1em;
+    border-radius: 50%
+  }
+
+  .about-content{
+    margin-left:4em;
+    margin-top: 50vh;
+  }
+  .about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+    row-gap: 8em;
+  }
+
+  .text-column{
+    font-size: 2em;
+    line-height: 1.4em;
+    font-family: 'NBInternationalLi', Helvetica, sans-serif;
+  }
+  .subtitle{
+    font-size: 2em;
+    line-height: 1.4em;
+    font-family: 'NBInternationalRe', Helvetica, sans-serif;
+  }
 
 /* Footer */
 
   footer {
-    font-size:1em;
-    line-height: 1.2em;
+    font-family: 'NBInternationalMono', Courier, monospace;
+    font-size:0.9em;
+    line-height: 1.4em;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
     position:fixed;
     left:0px;
     bottom:0px;
     width:100%;
     padding-bottom: 2em;
-    padding-top: 6em;
+    padding-top: 8em;
     text-align: right;
     background: rgb(217,217,217);
-    background: linear-gradient(0deg, rgba(217,217,217,1) 0%, rgba(217,217,217,0) 100%);
+    background: linear-gradient(0deg, rgba(201,201,201,1) 0%, rgba(201,201,201,0) 100%);
   }
 
+  footer a{
+    color: #111111;
+  }
+
+  .black {
+    color: #111111;
+  }
   * html #footer {
      position:absolute;
      top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
@@ -150,9 +331,9 @@
 
   .footer-grid {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr ;
     grid-gap: 0;
-    padding: 0 40px;
+    padding: 0 40px;;
   }
 
   .logo {display: block; text-align: left;}
@@ -176,7 +357,11 @@
 
 /* Media Queries */
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1040px;) {
+  body{
+    font-size: 0.8em
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: auto;
@@ -198,9 +383,33 @@
 
 
 @media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.8rem;
+  }
+    nav {
+    padding-bottom: 2rem;
+    display: none;
+    }
+
+  .introduction {
+    width: 100%;
+    font-size: 0.7rem;
+    padding-top: 4em;
+  }
+
   .content-grid{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+
+  .about-grid{
+    grid-template-columns: 1fr;
+  }
+  .projects-grid{
+        grid-template-columns: 1fr;
+  }
+  .experience-grid{
+        grid-template-columns: 1fr;
   }
   .footer-grid {
     grid-template-columns: 1fr ;
@@ -221,4 +430,9 @@
   .linkedin-mob{display: block;}
 
   .instagram {display:none;}
-}
+  .description {
+    display:none;
+  }
+  .appendix {
+    display: none;
+  }
