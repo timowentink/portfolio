@@ -1,114 +1,112 @@
+/* Color */
+  :root {
+    --black: #111111;
+    --white-purple: #FBFAFF;
+    --white-pink: #FDF6F3;
+    --white-blue: #EFF4FA;
+    --blue: #94B7DD;
+    --pink: #FBE2D9;
+  }
 
 /* Typography */
-  @font-face {
-    font-family: 'NBInternationalLi';
-    src: url('../fonts/NBInternational/NB-International-Pro-Light.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/NBInternational/NB-International-Pro-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-          url('../fonts/NBInternational/NB-International-Pro-Light.woff2') format('woff2'), /* Super Modern Browsers */
-          url('../fonts/NBInternational/NB-International-Pro-Light.woff') format('woff'), /* Pretty Modern Browsers */
-          url('../fonts/NBInternational/NB-International-Pro-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-          url('../fonts/NBInternational/NB-International-Pro-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
-  }
-  @font-face {
-    font-family: 'NBInternationalRe';
-    src: url('../fonts/NBInternational/NB-International-Pro-Regular.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/NBInternational/NB-International-Pro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-          url('../fonts/NBInternational/NB-International-Pro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-          url('../fonts/NBInternational/NB-International-Pro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-          url('../fonts/NBInternational/NB-International-Pro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-          url('../fonts/NBInternational/NB-International-Pro-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('../fonts/Sneak-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Sneak-Regular.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Sneak-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Sneak-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+       font-weight: normal;
+       font-style: normal;
+           -webkit-font-smoothing: antialiased;
+
+}
+
+@font-face {
+  font-family: 'Sneak';
+  src: url('../fonts/Sneak-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Sneak-Light.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Sneak-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Sneak-Light.woff') format('woff'); /* Pretty Modern Browsers */
+      font-weight: 300;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+
+}
+
+
+
+html {
+   font-family: "Sneak", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   font-feature-settings: "dlig","liga","ss01","ss02","ss03";
+   font-weight: normal;
+
+}
+
+    /* setting the max width*/
+ @media screen and (min-width: 50em) {
+  html {
+    font-size: 1.5em;
   }
 
-  @font-face {
-    font-family: 'NBInternationalBo';
-    src: url('../fonts/NBInternational/NB-International-Pro-Bold.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/NBInternational/NB-International-Pro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-          url('../fonts/NBInternational/NB-International-Pro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-          url('../fonts/NBInternational/NB-International-Pro-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-          url('../fonts/NBInternational/NB-International-Pro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-          url('../fonts/NBInternational/NB-International-Pro-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
-  }
-
-  @font-face {
-    font-family: 'NBInternationalMono';
-    src: url('../fonts/NBInternational/NB-International-Pro-Mono.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/NBInternational/NB-International-Pro-Mono.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-          url('../fonts/NBInternational/NB-International-Pro-Mono.woff2') format('woff2'), /* Super Modern Browsers */
-          url('../fonts/NBInternational/NB-International-Pro-Mono.woff') format('woff'), /* Pretty Modern Browsers */
-          url('../fonts/NBInternational/NB-International-Pro-Mono.ttf')  format('truetype'), /* Safari, Android, iOS */
-          url('../fonts/NBInternational/NB-International-Pro-Mono.svg#svgFontName') format('svg'); /* Legacy iOS */
-  }
+}
 
   body {
-    font-family: 'NBInternationalLi',Helvetica, sans-serif;
-    font-size: 100%;
-    line-height: 1.5;
-    color: #111111;
+    font-family: 'Sneak',Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--black);
   }
 
   h1 {
-    font-size: 8vh;
-    line-height: 1.2; /* Responsive Vertical Rhythm */
-    font-weight: normal;
+      font-size: 1.25em;
   }
 
   h2 {
-    font-size: 6vh;
-    line-height: calc(18px + 1vw); /* Responsive Vertical Rhythm */
+      font-size: 1.25em;
   }
 
   h3 {
-    font-size: 5vh;
-    line-height: calc(18px + 0.7vw); /* Responsive Vertical Rhythm */
   }
-
-  h4 { font-size: 3vh;}
-  h5 { font-size: 2vh; }
-  h6 { font-size: 1vh; }
-
-  h4, h5, h6 {
-    line-height: calc(18px + .2vw); /* Responsive Vertical Rhythm */
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    margin: calc(12px + 1.05vw) 0; /* Responsive margins */
-  }
-
-
-
-
 
   a {
+    color: var(--black);
+    text-decoration: underline;
+  }
+  a:hover {
     text-decoration: none;
-    color: #111111;
-    font-weight: normal;
   }
-
-  .mono {
-    font-family: 'NBInternationalMono',Courier, monospace;
-  }
-
-  .bold {
-    font-family: 'NBInternationalBo',Courier, monospace;
-  }
-
-  del{
-    color:#ffffff;
-  }
-
-  .medium{
-    font-family: 'NBInternationalRe',Courier, monospace;
-    font-size: 2.25em;
-
-  }
-  .regular {
-
-  }
-
 
   .small {
-    font-size: 1vh;
+    font-size: 1em;
+    font-weight: 300;
   }
+
+  .regular {
+    font-size: 1.25em;
+    font-weight: 300;
+
+  }
+
+  .medium {
+    font-size: 1.5em;
+    line-height: 1.8;
+    font-weight: lighter;
+
+  }
+
+  .large {
+    font-size: 2em;
+    font-weight: normal;
+
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+
 /* Colour */
 
 
@@ -118,30 +116,55 @@
   }
   html, body {
     height: 100%;
+    margin:0;
   }
   body {
     border-width: 0px;
-    margin: 0px;
-    background:  rgb(201,201,201);
+    margin: 0;
+    background-color: var(--white-purple);
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 /* Header */
   header{
-    flex-wrap: wrap;
-    padding: 0 2.5rem;;
+    padding-top: 5em;
+    padding-left: 4em;
+    padding-right: 4em;
   }
 
+  .header-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 80px 1fr;
+      grid-gap: 0rem;
+    }
+
+  .logo {
+    margin-top: 6px;
+  }
+  .contact{
+    text-align: right;
+  }
+  .contact a{
+    text-decoration: none;
+  }
+  .contact a:hover{
+    text-decoration: underline;
+  }
+
+  .introduction{
+    margin-top: 10vh;
+    grid-column: 4 / 6;
+  }
 
   nav {
-
-    line-height: 1.3;
-    padding-top: 1em;
-    letter-spacing: -0.0625rem;
-  }
-
-  nav a{
-    color: #ffffff;
-    font-family: 'NBInternationalLi',Helvetica, sans-serif;
 
   }
 
@@ -164,152 +187,100 @@
   }
 
   li a:hover:not(.active) {
-    color: #111111;
+      color: var(--black);
 }
 
-.active {
-    color: #111111;
-}
+  .active {
+      color: var(--black);
+  }
 
+  .pagetitle-index {
+    grid-column: 1 / 4;
+  }
 
 /* Content */
   article{
-    padding: 0 2.5rem;;
+    padding-left: 4em;
+    padding-right: 4em;
+
   }
 
-  .content {
-  }
-
-  .index{
-    padding-top: 2rem;
-    height: 100vh;
-  }
-  .about{
-    padding-top: 2.5rem;
-    height: 20vh;
+  section{
+    padding-top: 20vh;
+    padding-bottom: 10vh;
   }
 
   .projects{
-    position: relative;
-    padding-bottom: 40vh;
-    padding-top: 20vh;
+    grid-column: 1 / 4;
+  }
+
+  .who-hires-me{
+
+  }
+
+  .studio-experience{
+    grid-column: 1 / 4;
+
   }
 
   .on-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 4em;
+    grid-gap: 0;
   }
 
   .table {
-    margin: 0;
-    padding: 0;
-    display: block;
-    margin-bottom: 2vh;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  }
+
+  .table a{
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .table-head{
-    font-size: 4vh;
+    border-bottom: 1px solid #111111;
     margin-right: auto;
+    padding-bottom: 16px;
   }
 
   .row {
     display: flex;
     align-items: center;
-
+    border-bottom: 1px solid #111111;
   }
 
-  .table--projects{
-    grid-column: 3 / 5;
+  .title {
+    display: block;
+    padding: 1em 0;
+
   }
-
-  .name {
-    font-size: 5vh;
-    display: flex;
+  .skills {
+    display: block;
   }
-
-
-
-  .inactive {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+  .arrow{
+    font-family: 'Sneak';
+    display: block;
   }
 
   .right {
-    align-items: center;
+    align-items: baseline;
     text-align: right;
-    display: flex;
+    display: block;
     margin-left: auto;
+    float: right;
   }
 
-  .arrow-right {
-    background: url(../img/arrow-right.svg) no-repeat;
-    height: 24px;
-    width: 32px;
+  .grid-2{
+    grid-column: 4 / 6;
   }
 
-  .arrow-right:hover {
-    left: 10px;
-    transition-delay: 0.2s;
-    transition-duration: 1.2s;
-    transition-timing-function: ease-in-out;
+  .grid-3 {
+    grid column: 1 / 4;
   }
-
-  .sidenote--projects {
-    align-items: flex-end;
-    display: flex;
-    text-align: right;
-    padding-right: 2em;
-    line-height: normal;
-    text-transform: uppercase;
-    font-family: 'NBInternationalMono', Courier, monospace;
-    color: #111;
-  }
-
-    .sidenote--experience {
-      align-items: flex-end;
-      display: flex;
-      text-align: left;
-      padding-right: 2em;
-      line-height: normal;
-      text-transform: uppercase;
-      font-family: 'NBInternationalMono', Courier, monospace;
-      color: #111;
-      display: none;
-    }
-
-
-  .appendix {
-      font-size: 1.3vh;
-      position: relative;
-      display: inline-block;
-      vertical-align: top;
-      width: auto;
-      margin-top: -0.4em;
-      padding-left:1rem;
-  }
-
-  .table--experience{
-      grid-column: 2 / 4;
-  }
-
-  .about-content{
-    margin-top: 50vh;
-  }
-
-  .text-column{
-    grid-column: 3 / 5;
-
-  }
-  .subtitle{
-    grid-column: 2 / 3;
-  }
-
-  .introduction {
-    padding-top: 6rem;
-    grid-column: 1 / 4;
-  }
-
 /* Functions */
 
   .back-home {
@@ -317,68 +288,20 @@
   }
 
   .back-home:before {
-    content: '';
     display: inline-block;
     background-size: 2rem;
 
   }
-  .page-title {
-    grid-column: 2 / 4 ;
-  }
-
 /* Footer */
 
   footer {
-    font-family: 'NBInternationalMono', Courier, monospace;
-    font-weight: normal;
-    color: white;
-    text-transform: uppercase;
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    width:100%;
-    padding-bottom: 2em;
-    padding-top: 8em;
-    text-align: right;
-    background: rgb(201,201,201);
-    background: linear-gradient(0deg, rgba(201,201,201,1) 0%, rgba(201,201,201,1) 60%, rgba(201,201,201,0) 100%);
+
   }
 
   footer a{
-    color: #111111;
+
   }
 
-  .black {
-    color: #111111;
-  }
-  * html #footer {
-     position:absolute;
-     top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
-  }
-
-  .footer-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0;
-    padding: 0 2.5rem;;
-  }
-
-  .logo {display: block; text-align: left; grid-column: 1/4}
-  .logo-mob{display: none;}
-
-  .contact {display: block; text-align: left;}
-  .contact-mob{display: none;}
-
-  .linkedin {display: block;}
-  .linkedin-mob{display: none;}
-
-  .instagram {display:block;}
-
-
-/* Push is the last element inside wrapper */
- .push{
-  height: 220px;
-}
 /* Objects */
 
 
@@ -387,30 +310,6 @@
 
 @media only screen and (max-width: 768px) {
 
-  .on-grid {
-    display: block;
-  }
-
-  .sidenote--projects {
-    display:none;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: auto;
-    height: auto;
-
-  }
-  .logo {display: none; }
-  .logo-mob{display: block;text-align: left;}
-
-  .contact {display: none;}
-  .contact-mob{display: block;}
-
-  .linkedin {display: none;}
-  .linkedin-mob{display: block;}
-
-  .instagram {display:none;}
 }
 
 
@@ -418,55 +317,4 @@
 @media only screen and (max-width: 1200px) {
   body {
 
-  }
-    nav {
-    padding-bottom: 2rem;
-    display: none;
-    }
-
-  .introduction {
-    width: 100%;
-    padding-top: 4em;
-  }
-
-  .on-grid {
-  }
-
-  .table--projects {
-    grid-column: 2 / 6;
-  }
-
-  .table--experience {
-    grid-column: 1 / 5;
-  }
-
-  .sidenote--projects {
-    display:none;
-  }
-
-
-  .footer-grid {
-    grid-template-columns: 1fr ;
-    grid-template-rows: auto;
-    height: auto;
-    text-align: left;
-  }
-  footer {
-      position: relative;
-  }
-  .logo {display: none;}
-  .logo-mob{display: block;}
-
-  .contact {display: none;}
-  .contact-mob{display: block;}
-
-  .linkedin {display: none;}
-  .linkedin-mob{display: block;}
-
-  .instagram {display:none;}
-  .description {
-    display:none;
-  }
-  .appendix {
-    display: none;
   }
