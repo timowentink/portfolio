@@ -1,16 +1,17 @@
 /* Color */
   :root {
-    --black: #111111;
+    --black: #1a1919;
     --white-purple: rgba(251, 250, 255, 1);
-    --white-pink: rgba(253, 246, 243, 1);
+    --white-pink: rgba(250, 240, 237, 1);
     --white-blue: rgba(239, 244, 250, 1);
     --blue: #94B7DD;
     --pink: #FBE2D9;
 
 
     --white-purple-trans: rgba(251, 250, 255, 0);
-    --white-pink-trans: rgba(253, 246, 243, 0);
+    --white-pink-trans: rgba(250, 240, 237, 0);
     --white-blue-trans: rgba(239, 244, 250, 0);
+
   }
 
   /* Overall */
@@ -24,7 +25,7 @@
     body {
       border-width: 0px;
       margin: 0;
-      background-color: var(--white-purple);
+      background-color: var(--white-pink);
     }
 
 
@@ -126,7 +127,7 @@ html {
   }
 
   .regular {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 300;
 
   }
@@ -134,27 +135,25 @@ html {
   .medium {
     font-size: 1.5em;
 
-    font-weight: lighter;
+    font-weight: 300;
 
   }
 
   .large {
     font-size: 2em;
-    font-weight: normal;
+    font-weight: 400;
 
   }
 
-  h1,h2,h3,h4,h5,h6 {
-    margin: 0;
+  .title h3 {
+    margin:0;
   }
 
 /* Colour */
 
-
-
   .container-fluid {
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-right: 4em;
+    padding-left: 4em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -164,30 +163,38 @@ html {
     position: sticky;
     top:0;
     background: rgb(253,246,243);
-    background: linear-gradient(0deg, var(--white-purple-trans) 0%, var(--white-purple) 40%);
-    padding-top: 4em;
+    background: linear-gradient(0deg, var(--white-pink-trans) 0%, var(--white-pink) 40%);
+    padding-top: 3em;
     padding-bottom: 10vh;
     z-index: 999;
+
+  }
+
+  header > h1{
+    margin : 0;
   }
 
   .header-grid{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-gap: 0rem;
+      grid-gap: 0;
     }
 
   .logo {
     position: relative;
     display: block;
     margin-top: 6px;
+    grid-column: 4 / 5;
   }
   .contact{
-    text-align: right;
+    text-align: left;
+    grid-column: 4 ;
   }
 
 
   .introduction{
     padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 
   nav {
@@ -196,13 +203,14 @@ html {
 
   ul {
     list-style-type: none;
-    margin: 0;
+    display: block;
+    margin: 1em 0;
     padding: 0;
     overflow: hidden;
   }
 
   li {
-    float: left;
+
     padding-right: 0.5em;
   }
 
@@ -216,12 +224,20 @@ html {
       color: var(--black);
 }
 
+  .expertise {
+    position: relative;
+    width: 500px;
+  }
+
   .active {
       color: var(--black);
   }
 
-  .pagetitle-index {
-    grid-column: 1 / 4;
+  .pagetitle {
+    grid-column: 1 ;
+  }
+  .pagefunction {
+    grid-column: 2 / 4;
   }
 
 /* Content */
@@ -232,7 +248,7 @@ html {
   }
 
   .has-padding-vh{
-    padding-top: 20vh;
+    padding-top: 10vh;
   }
 
   .projects{
@@ -310,10 +326,33 @@ html {
   .grid-3 {
     grid-column: 1 / 4;
   }
+
+  .grid-3-center {
+    grid-column: 2 / 5;
+  }
+
+  .grid-2-center {
+    grid-column: 2 / 4;
+  }
+
+  .grid-2-left {
+    grid-column: 1 / 3;
+  }
+
+  .grid-2-right {
+    grid-column: 4 / 6;
+  }
+
+
+
+
+
+
 /* Functions */
 
+
   .back-home {
-    grid-column: 1 / 2 ;
+    grid-column: 2 ;
   }
 
   .back-home:before {
@@ -361,16 +400,23 @@ html {
   .grid-2 {
     grid-column: 1;
   }
+  header {
+    padding-top: 2em;
+  }
   .header-grid {
     display: block;
   }
   .contact{
-    position: relative;
-    text-align: left;
+
   }
   .logo {
     position: sticky;
     top:1em;
+
+  }
+
+  .introduction {
+    padding-top: 0;
   }
 
   .hide-on-mobile {
@@ -459,5 +505,47 @@ html {
   }
   body {
   font-size: 20px;
+  }
+}
+
+
+/* Carroussel */
+
+* { box-sizing: border-box; }
+
+
+.swipeAlert  {
+
+}
+
+.slider {
+  padding-bottom: 10vh;
+}
+
+.carousel {
+
+}
+
+.carousel img {
+  display: block;
+  width: 60%;
+  margin-right: -0.5px;
+
+}
+
+.bottom-fade {
+  position:relative;
+  height: 4vw;
+  margin-top: -4vw;
+  z-index: 999;
+  background: rgb(253,246,243);
+  background: linear-gradient(180deg, var(--white-pink-trans) 0%, var(--white-pink) 100%);
+
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    width: 60%;
+
   }
 }
