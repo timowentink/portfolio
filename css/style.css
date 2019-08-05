@@ -486,6 +486,9 @@ html {
             opacity: 0;
             }
 
+
+
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   .container-fluid {
@@ -494,7 +497,7 @@ html {
   }
 
   body {
-    font-size: 0.8em;
+    font-size: 0.75em;
   }
 
 }
