@@ -4,11 +4,10 @@
     --white-purple: rgba(251, 250, 255, 1);
     --white-pink: rgba(250, 240, 237, 1);
     --white-blue: rgba(239, 244, 250, 1);
-    --blue: #94B7DD;
-    --pink: #FBE2D9;
+    --blue: rgba(18, 33, 222, 1);
+    --gold: rgba(255, 171, 0, 1);
+    --pink: rgba(246, 139, 112, 1);
     --swamp: #63775C;
-
-
     --white-purple-trans: rgba(251, 250, 255, 0);
     --white-pink-trans: rgba(250, 240, 237, 0);
     --white-blue-trans: rgba(239, 244, 250, 0);
@@ -31,8 +30,8 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    ::-moz-selection { background: var(--black);  color: var(--pink); }
-    ::selection { background: var(--black); color: var(--pink);  }
+    ::-moz-selection {color: var(--pink); }
+    ::selection {color: var(--pink);  }
 
 /* Typography */
 
@@ -167,7 +166,7 @@ html {
     font-size: 8vw;
     letter-spacing: -2px;
     white-space: nowrap;
-    color: var(--pink);
+    color: var(--white-pink);
     text-decoration: none;
   }
 
@@ -177,16 +176,16 @@ html {
 
 .contact-bg, .contact-bg a {
   background-color: var(--black);
-  color: var(--pink);
+  color: var(--white-pink);
 }
 
 .contact-header{
   background: var(--black);
-  color: var(--pink);
+  color: var(--white-pink);
 }
 
 .contact-header a{
-  color: var(--pink);
+  color: var(--white-pink);
 }
 
 
@@ -245,6 +244,7 @@ html {
     margin: 1em 0;
     padding: 0;
     overflow: hidden;
+    line-height: 1.75em;
   }
 
   li {
@@ -263,10 +263,11 @@ html {
 }
 
   .expertise {
+    font-size: 1.25em;
     position: relative;
-    text-align: right;
-    padding-right: 2em;
-    top: 8em;
+    text-align: left;
+    padding-right: 4em;
+    top: 4em;
     width: 300px;
   }
 
@@ -350,21 +351,22 @@ html {
   .status {
     margin-top: 2em;
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><circle cx='6' cy='6' r='6' /></svg>")  no-repeat;
-    background-position: left center;
+    background-position: left;
     background-size: 12px;
     padding-left: 1.5em;
-    transition: all 0.15s;
+    transition: all 0.1s;
 
   }
 
   .status:hover {
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><circle cx='6' cy='6' r='6' /></svg>")  no-repeat;
-    background-position: left center;
+    background-position: left;
     background-size: 4px;
-    padding-left: 0.6em;
+    margin-left: 4px;
+    padding-left: 0.75em;
     transition: all 0.1s;
-    -moz-transition:  all 0.15s ease-in-out;
-    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition:  all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
 
   }
 
@@ -374,8 +376,8 @@ html {
     background-size: 4px;
     padding-left: 0;
     transition: all 0.15s;
-    -moz-transition:  all 0.15s ease-in-out;
-    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition:  all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
   }
 
   .right {
@@ -494,12 +496,31 @@ html {
   .container-fluid {
     padding-right: 2em;
     padding-left: 2em;
+    padding-top: 2em;
   }
 
   body {
     font-size: 0.75em;
   }
 
+  .large {
+    font-size: 1.75em;
+  }
+  .regular {
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+  .medium {
+    font-weight: .300;
+  }
+
+  .has-padding-vh {
+    padding-top: 20vh;
+  }
+
+  .introduction {
+    margin-top: 10vh;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -561,10 +582,6 @@ html {
 
   }
 
-  .container-fluid {
-    padding-right: 10vw;
-  }
-
   .mobile-logo {
     display: none;
   }
@@ -623,10 +640,14 @@ html {
 
 @media only screen and (min-width: 2000px) {
   html{
-  font-size: 2em;
+  font-size: 1.75em;
   }
   body {
   font-size: 20px;
+  }
+
+  .container-fluid {
+    padding-right: 10vw;
   }
 }
 
