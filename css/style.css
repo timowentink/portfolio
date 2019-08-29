@@ -646,9 +646,8 @@ html {
       left: 0;
       background: var(--black);
     }
-
-    .grid-2 {
-      padding-right: 10vh;
+    .container-fluid {
+      padding-right: 10vw;
     }
 }
 
@@ -658,13 +657,6 @@ html {
   }
   body {
   font-size: 20px;
-  }
-
-  .container-fluid {
-    padding-right: 10vw;
-  }
-  .grid-2 {
-    padding-right: 0;
   }
 }
 
