@@ -487,6 +487,9 @@ html {
 
          .fade {
             opacity: 0;
+            transition: opacity 0.25s ease-in-out;
+            -moz-transition: opacity 0.25s ease-in-out;
+            -webkit-transition: opacity 0.25s ease-in-out;
             }
 
 
@@ -521,6 +524,13 @@ html {
 
   .introduction {
     margin-top: 10vh;
+  }
+
+  .grid-2 {
+    padding-right: 0;
+  }
+  .strong {
+    font-weight: 400;
   }
 }
 
