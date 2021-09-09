@@ -320,7 +320,7 @@ html {
   }
 
   .table-head{
-    border-bottom: 1px solid var(--black);
+    
     margin-right: auto;
     padding-bottom: 1rem;
   }
