@@ -456,10 +456,13 @@ html {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       position: relative;
+      z-index: 999;
+
   }
 
   #projectList h3 {
     cursor: pointer;
+}
   }
 
   #projectList span{
@@ -471,7 +474,8 @@ html {
       height: 400px;
       position: absolute;
       top: calc(50% - 200px);
-      right: calc(20% - 200px)
+      right: calc(20% - 200px);
+      z-index: 1;
   }
 
   #projectList li {
@@ -606,7 +610,7 @@ html {
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 999px) {
   .on-grid {
     grid-template-columns: 1fr;
   }
@@ -657,6 +661,14 @@ html {
     text-align: right;
     float: right;
   }
+
+  #projectList li:hover img{
+      display:none;
+  }
+
+  #projectList {grid-template-columns: 1fr;}
+}
+
 }
 
 
@@ -718,8 +730,19 @@ html {
       left: 0;
       background: var(--black);
     }
-    .container-fluid {
+    #projectList li:hover img{
+        display:block;
+    }
 
+
+    #projectList img{
+        display: none;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: calc(50% - 100px);
+        right: calc(20% - 100px);
+        z-index: 1;
     }
 }
 
