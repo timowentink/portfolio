@@ -320,7 +320,7 @@ html {
   }
 
   .table-head{
-    
+
     margin-right: auto;
     padding-bottom: 1rem;
   }
@@ -467,11 +467,11 @@ html {
   }
   #projectList img{
       display: none;
-      width: 300px;
-      height: 300px;
+      width: 400px;
+      height: 400px;
       position: absolute;
-      top: calc(50% - 150px);
-      right: calc(20% - 150px)
+      top: calc(50% - 200px);
+      right: calc(20% - 200px)
   }
 
   #projectList li {
