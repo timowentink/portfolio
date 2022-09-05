@@ -452,6 +452,11 @@ html {
   body {
   }
 
+  h3.medium::after {
+    content: "Live Site";
+    padding-left:1rem;
+  }
+
   #projectList{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
