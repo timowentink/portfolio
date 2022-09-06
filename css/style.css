@@ -453,7 +453,7 @@ html {
   }
 
   h3.medium::after {
-    content: "Live Site";
+
     padding-left:1rem;
   }
 
